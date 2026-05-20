@@ -1,60 +1,77 @@
 # MLOps Assignment 2
 
-Text Classification using DistilBERT with Hugging Face, Kaggle, and Weights & Biases (W&B).
+Text classification project using DistilBERT, Hugging Face Transformers, Kaggle GPU, and Weights & Biases (W&B).
 
 ---
 
-## Project Overview
-
-This project demonstrates a complete MLOps workflow for training and deploying a transformer-based NLP model. The model was fine-tuned using the Hugging Face Transformers library on a Kaggle GPU environment and tracked using Weights & Biases (W&B).
-
-The final trained model and tokenizer were uploaded to Hugging Face Hub for public access.
-
----
-
-## Model Used
+## Model
 
 * Model: `distilbert-base-cased`
-* Task: Text Classification
-* Framework: Hugging Face Transformers
+* Task: Multi-class text classification
+* Classes:
 
-DistilBERT was selected because it is lightweight, faster than BERT, and performs well for NLP classification tasks while requiring fewer computational resources.
-
----
-
-## Training Configuration
-
-| Parameter     | Value           |
-| ------------- | --------------- |
-| Platform      | Kaggle Notebook |
-| GPU           | Tesla T4        |
-| Epochs        | 3               |
-| Batch Size    | 8               |
-| Learning Rate | 3e-5            |
+  * children
+  * comics_graphic
+  * fantasy_paranormal
+  * history_biography
+  * mystery_thriller_crime
+  * poetry
+  * romance
+  * young_adult
 
 ---
 
-## Evaluation Results
+## Training Setup
 
-| Metric    | Score  |
-| --------- | ------ |
-| Accuracy  | 0.5981 |
-| F1 Score  | 0.6023 |
-| Precision | 0.6105 |
-| Recall    | 0.5981 |
-| Eval Loss | 2.3864 |
+| Parameter     | Value    |
+| ------------- | -------- |
+| Platform      | Kaggle   |
+| GPU           | Tesla T4 |
+| Epochs        | 3        |
+| Batch Size    | 8        |
+| Learning Rate | 3e-5     |
+
+---
+
+## Results
+
+| Metric            | Score  |
+| ----------------- | ------ |
+| Accuracy          | 0.5981 |
+| Weighted F1 Score | 0.6023 |
+| Precision         | 0.6105 |
+| Recall            | 0.5981 |
+| Eval Loss         | 2.3864 |
+
+---
+
+## Classification Summary
+
+| Genre                  | F1 Score |
+| ---------------------- | -------- |
+| children               | 0.65     |
+| comics_graphic         | 0.82     |
+| fantasy_paranormal     | 0.41     |
+| history_biography      | 0.60     |
+| mystery_thriller_crime | 0.54     |
+| poetry                 | 0.80     |
+| romance                | 0.57     |
+| young_adult            | 0.43     |
+
+---
+
+## Tools & Libraries
+
+* Python
+* Hugging Face Transformers
+* PyTorch
+* Scikit-learn
+* W&B
+* Kaggle Notebook
 
 ---
 
 ## Project Links
-
-### GitHub Repository
-
-PASTE_YOUR_GITHUB_LINK
-
-### Kaggle Notebook
-
-PASTE_YOUR_KAGGLE_NOTEBOOK_LINK
 
 ### Hugging Face Model
 
@@ -64,11 +81,19 @@ https://huggingface.co/ShrikrishnaIITJ/distilbert-goodreads-genres
 
 https://wandb.ai/g25ait2103-indian-institute-of-technology-jodhpur/huggingface
 
+### Kaggle Notebook
+
+PASTE_YOUR_KAGGLE_NOTEBOOK_LINK
+
+### GitHub Repository
+
+PASTE_YOUR_GITHUB_REPOSITORY_LINK
+
 ---
 
 ## Installation
 
-```bash id="3u6wgt"
+```bash id="yq7yx0"
 pip install transformers datasets evaluate accelerate wandb huggingface_hub scikit-learn torch
 ```
 
@@ -76,37 +101,15 @@ pip install transformers datasets evaluate accelerate wandb huggingface_hub scik
 
 ## Running the Project
 
-1. Open the notebook in Kaggle or Google Colab.
+1. Open the notebook in Kaggle or Colab.
 2. Enable GPU acceleration.
-3. Install required dependencies.
+3. Install dependencies.
 4. Run all notebook cells sequentially.
-5. Training logs and metrics will appear in W&B.
-6. The trained model will be uploaded to Hugging Face Hub.
-
----
-
-## Files Included
-
-* Training Notebook (`.ipynb`)
-* README.md
-* requirements.txt
-* Evaluation Report
-
----
-
-## What I Learned
-
-This assignment helped me understand:
-
-* GPU-based model training using Kaggle
-* Experiment tracking with W&B
-* Model hosting using Hugging Face Hub
-* Managing reproducible ML workflows
-* Basic MLOps pipeline integration
+5. Training metrics are tracked using W&B.
+6. Final model is pushed to Hugging Face Hub.
 
 ---
 
 ## Author
 
 Shrikrishna Tripathi
-
