@@ -83,11 +83,11 @@ https://wandb.ai/g25ait2103-indian-institute-of-technology-jodhpur/huggingface
 
 ### Kaggle Notebook
 
-PASTE_YOUR_KAGGLE_NOTEBOOK_LINK
+https://www.kaggle.com/code/shrikrishnatripathi/notebook1ee14113a1
 
 ### GitHub Repository
 
-PASTE_YOUR_GITHUB_REPOSITORY_LINK
+https://github.com/ShrikrishnaIITJ/mlops-assignment2.git
 
 ---
 
