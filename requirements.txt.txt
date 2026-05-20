@@ -1,0 +1,25 @@
+# Core ML Libraries
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.12.0
+scikit-learn>=1.2.0
+
+# Experiment Tracking
+wandb>=0.15.0
+
+# Hugging Face Hub
+huggingface-hub>=0.16.0
+
+# Data Processing
+pandas>=1.5.0
+numpy>=1.24.0
+
+# Evaluation Metrics
+evaluate>=0.4.0
+
+# Notebook Environment
+jupyter>=1.0.0
+ipykernel>=6.23.0
+
+# Utilities
+tqdm>=4.65.0
