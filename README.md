@@ -1,7 +1,7 @@
 # MLOps Assignment 2 — DistilBERT Goodreads Genre Classifier
 
-**Student:** Shrikrishna Tripathi
-**Course:** MLOps, IIT Jodhpur
+**Student:** Shrikrishna Tripathi 
+
 **Roll Number:** G25AIT2103
 
 ---
@@ -18,7 +18,7 @@ The primary training was done in the Kaggle Notebook (linked below). The Python 
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/ShrikrishnaIITJ/mlops-assignment2
+git clone https://github.com/ShrikrishnaIITJ/mlops-assignment2.git
 
 # 2. Open the project folder
 cd mlops-assignment2
@@ -44,10 +44,10 @@ python inference.py --text "A thrilling mystery with unexpected twists and a dar
 
 ## Training Platform
 
-Training was performed on **Kaggle Notebook** with GPU accelerator.
+Training was performed on **Kaggle Notebook** with GPU accelerator.  
 Kaggle Secrets were used to securely store `WANDB_API_KEY` and `HF_TOKEN` using `kaggle_secrets.UserSecretsClient`.
 
-**Kaggle Notebook:**
+**Kaggle Notebook:**  
 https://www.kaggle.com/code/shrikrishnatripathi/mlops-assignment2-g25ait2103
 
 ---
@@ -57,7 +57,7 @@ https://www.kaggle.com/code/shrikrishnatripathi/mlops-assignment2-g25ait2103
 These results are from the notebook's `trainer.evaluate()` output:
 
 | Metric    | Value  |
-| --------- | ------ |
+| ---------- | ------ |
 | Accuracy  | 0.6000 |
 | F1 Score  | 0.5983 |
 | Precision | 0.5989 |
@@ -83,12 +83,12 @@ These results are from the notebook's `trainer.evaluate()` output:
 
 ## Links
 
-| Resource           | Link                                                                                         |
-| ------------------ | -------------------------------------------------------------------------------------------- |
-| Hugging Face Model | https://huggingface.co/ShrikrishnaIITJ/distilbert-goodreads-genres                           |
-| W&B Dashboard      | https://wandb.ai/g25ait2103-indian-institute-of-technology-jodhpur/huggingface/runs/4905vq6r |
-| Kaggle Notebook    | https://www.kaggle.com/code/shrikrishnatripathi/mlops-assignment2-g25ait2103                 |
-| GitHub Repository  | https://github.com/ShrikrishnaIITJ/mlops-assignment2                                         |
+| Resource | Link |
+|----------|------|
+| Hugging Face Model | https://huggingface.co/ShrikrishnaIITJ/distilbert-goodreads-genres |
+| W&B Dashboard | https://wandb.ai/g25ait2103-indian-institute-of-technology-jodhpur/huggingface/runs/4905vq6r |
+| Kaggle Notebook | https://www.kaggle.com/code/shrikrishnatripathi/mlops-assignment2-g25ait2103 |
+| GitHub Repository | https://github.com/ShrikrishnaIITJ/mlops-assignment2 |
 
 ---
 
@@ -100,25 +100,18 @@ These results are from the notebook's `trainer.evaluate()` output:
 ├── inference.py
 ├── requirements.txt
 ├── README.md
-├── notebook1ee14113a1.ipynb
-└── MLOps_Assignment2_Report.pdf
+└── notebook1ee14113a1.ipynb
 ```
 
 ---
 
 ## Tools & Libraries
 
-* Python
-* PyTorch
-* Hugging Face Transformers
-* Datasets
-* Scikit-learn
-* Weights & Biases (W&B)
-* Kaggle Notebook
-* Hugging Face Hub
-
----
-
-## Conclusion
-
-This project successfully demonstrated a complete MLOps workflow using modern NLP and cloud-based ML tools. The DistilBERT model was trained and evaluated using Kaggle GPU infrastructure while experiment tracking was managed using W&B. The trained model was uploaded to Hugging Face Hub and the entire workflow was version-controlled using GitHub for reproducibility and accessibility.
+- Python
+- PyTorch
+- Hugging Face Transformers
+- Datasets
+- Scikit-learn
+- Weights & Biases (W&B)
+- Kaggle Notebook
+- Hugging Face Hub
