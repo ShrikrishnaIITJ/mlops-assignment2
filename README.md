@@ -100,7 +100,7 @@ These results are from the notebook's `trainer.evaluate()` output:
 ├── inference.py
 ├── requirements.txt
 ├── README.md
-└── notebook1ee14113a1.ipynb
+└── mlops-assignment2-g25ait2103.ipynb
 ```
 
 ---
